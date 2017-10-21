@@ -36,6 +36,7 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'timecop'
 end
 
 group :development do
