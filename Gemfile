@@ -9,7 +9,10 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'action_args'
 
+# database
 gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'activerecord-mysql-index-hint'
+
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
