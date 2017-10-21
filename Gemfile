@@ -30,7 +30,10 @@ gem 'sass-rails'
 gem 'coffee-rails'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
   gem 'capybara'
   gem 'selenium-webdriver'
 end
