@@ -13,11 +13,14 @@ gem 'action_args'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'activerecord-mysql-index-hint'
 
+# view
+gem 'slim-rails'
+gem 'jbuilder'
+
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
-gem 'jbuilder'
 
 group :development, :test do
   gem 'byebug'
