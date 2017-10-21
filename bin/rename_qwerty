@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+
+require "active_support/core_ext/string"
+
+class Rename
+  def initialize(name)
+    abort usage if name.nil?
+
+    @upcase    = name.upcase
+    @camelcase = name.camelcase
+    @snakecase = name.underscore
+  end
+
+  def usage
+    "Usage: #{$0} name"
+  end
+
+  def call
+    files.each do |path|
+      replace(path)
+    end
+  end
+
+  def files
+    `git grep -liI qwerty`.split("\n")
+  end
+
+  def replace(path)
+    tmp = path + ".tmp"
+    system "cp -p #{path} #{tmp}"
+    File.open(tmp, "w") do |f|
+      File.read(path).each_line do |line|
+        line = line
+          .gsub("QWERTY", @upcase)
+          .gsub("Qwerty", @camelcase)
+          .gsub("qwerty", @snakecase)
+        f.write line
+      end
+    end
+    system "mv #{tmp} #{path}"
+  end
+end
+
+Rename.new(ARGV[0]).call
