@@ -38,6 +38,7 @@ group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'timecop'
+  gem 'factory_girl_rails'
 end
 
 group :development do
