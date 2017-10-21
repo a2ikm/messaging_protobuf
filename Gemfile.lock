@@ -68,6 +68,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
+    database_rewinder (0.8.0)
     debug_inspector (0.0.3)
     erubi (1.7.0)
     execjs (2.7.0)
@@ -220,6 +221,7 @@ DEPENDENCIES
   activerecord-mysql-index-hint
   capybara
   coffee-rails
+  database_rewinder
   jbuilder
   mysql2 (>= 0.3.18, < 0.5)
   pry-byebug

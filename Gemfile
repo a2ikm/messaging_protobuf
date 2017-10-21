@@ -44,4 +44,5 @@ end
 
 group :test do
   gem 'test-unit-rails'
+  gem 'database_rewinder'
 end
