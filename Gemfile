@@ -8,6 +8,7 @@ end
 
 gem 'rails', '~> 5.1.4'
 gem 'action_args'
+gem 'config'
 
 # database
 gem 'mysql2', '>= 0.3.18', '< 0.5'
