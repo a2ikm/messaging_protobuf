@@ -17,7 +17,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'activerecord-mysql-index-hint'
 
 # app server
-gem 'puma'
+gem 'unicorn'
+gem 'unicorn-rails'
 
 # view
 gem 'slim-rails'
