@@ -30,6 +30,9 @@ gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
 
+# debug
+gem 'sigdump', require: 'sigdump/setup'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'

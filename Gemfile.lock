@@ -216,6 +216,7 @@ GEM
     selenium-webdriver (3.6.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
+    sigdump (0.2.4)
     slim (3.0.8)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 1.3.3, < 2.1)
@@ -298,6 +299,7 @@ DEPENDENCIES
   rails (~> 5.1.4)
   sass-rails
   selenium-webdriver
+  sigdump
   slim-rails
   spring
   spring-watcher-listen
