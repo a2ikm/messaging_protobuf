@@ -10,6 +10,7 @@ gem 'rails', '~> 5.1.4'
 gem 'action_args'
 gem 'config'
 gem 'kaminari'
+gem 'to_bool'
 
 # database
 gem 'mysql2', '>= 0.3.18', '< 0.5'
