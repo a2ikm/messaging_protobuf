@@ -23,14 +23,12 @@ gem 'puma'
 gem 'slim-rails'
 gem 'jbuilder'
 
-# assets
-gem 'uglifier'
-
 # css
 gem 'sass-rails'
 
 # javascript
 gem 'coffee-rails'
+gem 'uglifier'
 
 group :development, :test do
   gem 'pry-rails'
