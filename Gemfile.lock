@@ -34,6 +34,8 @@ GEM
       activemodel (= 5.1.4)
       activesupport (= 5.1.4)
       arel (~> 8.0)
+    activerecord-import (0.21.0)
+      activerecord (>= 3.2)
     activerecord-mysql-index-hint (0.0.4)
       activerecord (>= 3.1)
     activesupport (5.1.4)
@@ -288,6 +290,7 @@ PLATFORMS
 
 DEPENDENCIES
   action_args
+  activerecord-import
   activerecord-mysql-index-hint
   capybara
   coffee-rails
@@ -318,4 +321,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.15.4
+   1.16.0

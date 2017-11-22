@@ -15,6 +15,7 @@ gem 'to_bool'
 # database
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'activerecord-mysql-index-hint'
+gem 'activerecord-import'
 
 # app server
 gem 'unicorn'
