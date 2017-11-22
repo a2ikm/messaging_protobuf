@@ -119,6 +119,18 @@ GEM
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
     json (2.1.0)
+    kaminari (1.0.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.0.1)
+      kaminari-activerecord (= 1.0.1)
+      kaminari-core (= 1.0.1)
+    kaminari-actionview (1.0.1)
+      actionview
+      kaminari-core (= 1.0.1)
+    kaminari-activerecord (1.0.1)
+      activerecord
+      kaminari-core (= 1.0.1)
+    kaminari-core (1.0.1)
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -264,6 +276,7 @@ DEPENDENCIES
   database_rewinder
   factory_girl_rails
   jbuilder
+  kaminari
   mysql2 (>= 0.3.18, < 0.5)
   pry-byebug
   pry-doc
