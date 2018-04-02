@@ -113,6 +113,7 @@ GEM
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    google-protobuf (3.5.1.2)
     i18n (1.0.0)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
@@ -292,6 +293,7 @@ DEPENDENCIES
   config
   database_rewinder
   factory_bot_rails
+  google-protobuf
   jbuilder
   kaminari
   listen
