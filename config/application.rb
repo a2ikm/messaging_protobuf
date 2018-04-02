@@ -16,7 +16,6 @@ module MessagingProtobuf
     # -- all .rb files in that directory are automatically loaded.
 
     require 'google/protobuf/well_known_types'
-    require 'google/protobuf/empty'
     Dir[Rails.root.join("app/messages/*")].each { |rb| require rb }
   end
 end
