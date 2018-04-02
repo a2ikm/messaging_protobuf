@@ -7,53 +7,42 @@ end
 
 
 gem 'rails', '~> 5.1.6'
+
 gem 'action_args'
-gem 'config'
-gem 'kaminari'
-gem 'to_bool'
-
-# database
-gem 'mysql2', '>= 0.3.18', '< 0.5'
-gem 'activerecord-mysql-index-hint'
 gem 'activerecord-import'
-
-# app server
+gem 'activerecord-mysql-index-hint'
+gem 'coffee-rails'
+gem 'config'
+gem 'jbuilder'
+gem 'kaminari'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'sass-rails'
+gem 'sigdump', require: 'sigdump/setup'
+gem 'slim-rails'
+gem 'to_bool'
+gem 'uglifier'
 gem 'unicorn'
 gem 'unicorn-rails'
 
-# view
-gem 'slim-rails'
-gem 'jbuilder'
-
-# css
-gem 'sass-rails'
-
-# javascript
-gem 'coffee-rails'
-gem 'uglifier'
-
-# debug
-gem 'sigdump', require: 'sigdump/setup'
-
 group :development, :test do
-  gem 'pry-rails'
+  gem 'capybara'
+  gem 'factory_bot_rails'
   gem 'pry-byebug'
   gem 'pry-doc'
+  gem 'pry-rails'
   gem 'pry-stack_explorer'
-  gem 'capybara'
   gem 'selenium-webdriver'
   gem 'timecop'
-  gem 'factory_bot_rails'
 end
 
 group :development do
-  gem 'web-console'
-  gem 'spring'
   gem 'listen'
+  gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'web-console'
 end
 
 group :test do
-  gem 'test-unit-rails'
   gem 'database_rewinder'
+  gem 'test-unit-rails'
 end
