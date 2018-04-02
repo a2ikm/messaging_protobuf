@@ -14,5 +14,8 @@ module MessagingProtobuf
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    require 'google/protobuf/well_known_types'
+    require 'google/protobuf/empty'
   end
 end
