@@ -8,7 +8,6 @@ end
 
 gem 'rails', '~> 5.1.6'
 
-gem 'action_args'
 gem 'activerecord-import'
 gem 'activerecord-mysql-index-hint'
 gem 'coffee-rails'
