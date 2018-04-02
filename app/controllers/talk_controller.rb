@@ -48,6 +48,6 @@ class TalkController < ApplicationController
     reply Hello.new(from: `hostname`.strip)
   end
 
-  # ruby -e 'File.open("tmp/hello.protobuf", "wb") { |f| f.write(Hello.new(from/ "ichiro").to_proto) }'
+  # rails runner 'File.open("tmp/hello.protobuf", "wb") { |f| f.write(Hello.new(from: "ichiro").to_proto) }'
   # curl -X POST -H "Content-Type: application/protobuf" http://localhost:3000/talk/start --data-binary @tmp/hello.protobuf
 end
